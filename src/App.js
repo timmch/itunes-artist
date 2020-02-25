@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import jsonpAdapter from 'axios-jsonp';
 import './App.css';
 
 class Album extends React.Component {
@@ -116,7 +117,11 @@ class Artist extends React.Component  {
   }
 
   componentDidMount() {
-    axios.get('https://itunes.apple.com/lookup?id=' + this.props.artistId + '&entity=album')
+    axios(
+      {
+        url: 'https://itunes.apple.com/lookup?id=' + this.props.artistId + '&entity=album',
+        adapter: jsonpAdapter,
+      })
       .then(res => {
         let albums = res.data.results;
         let artist = albums.shift();
