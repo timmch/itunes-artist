@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/itunes-artist/static/css/main.35262ba1.chunk.css",
+    "main.css": "/itunes-artist/static/css/main.048c3a54.chunk.css",
     "main.js": "/itunes-artist/static/js/main.265493e8.chunk.js",
     "main.js.map": "/itunes-artist/static/js/main.265493e8.chunk.js.map",
     "runtime-main.js": "/itunes-artist/static/js/runtime-main.b012ca1a.js",
@@ -8,15 +8,15 @@
     "static/js/2.9f9a174b.chunk.js": "/itunes-artist/static/js/2.9f9a174b.chunk.js",
     "static/js/2.9f9a174b.chunk.js.map": "/itunes-artist/static/js/2.9f9a174b.chunk.js.map",
     "index.html": "/itunes-artist/index.html",
-    "precache-manifest.7b1a8b78c5ddbde33c5f4b418e1949be.js": "/itunes-artist/precache-manifest.7b1a8b78c5ddbde33c5f4b418e1949be.js",
+    "precache-manifest.95796cf1c3a8822997fdff06ad48593d.js": "/itunes-artist/precache-manifest.95796cf1c3a8822997fdff06ad48593d.js",
     "service-worker.js": "/itunes-artist/service-worker.js",
-    "static/css/main.35262ba1.chunk.css.map": "/itunes-artist/static/css/main.35262ba1.chunk.css.map",
+    "static/css/main.048c3a54.chunk.css.map": "/itunes-artist/static/css/main.048c3a54.chunk.css.map",
     "static/js/2.9f9a174b.chunk.js.LICENSE.txt": "/itunes-artist/static/js/2.9f9a174b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b012ca1a.js",
     "static/js/2.9f9a174b.chunk.js",
-    "static/css/main.35262ba1.chunk.css",
+    "static/css/main.048c3a54.chunk.css",
     "static/js/main.265493e8.chunk.js"
   ]
 }

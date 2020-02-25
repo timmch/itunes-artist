@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/itunes-artist/precache-manifest.7b1a8b78c5ddbde33c5f4b418e1949be.js"
+  "/itunes-artist/precache-manifest.95796cf1c3a8822997fdff06ad48593d.js"
 );
 
 self.addEventListener('message', (event) => {

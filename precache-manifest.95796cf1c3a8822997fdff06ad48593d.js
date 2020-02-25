@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f086f598df1b56867e3ff5172ba748b",
+    "revision": "15ac8545b05552ca88b395e50d1176c0",
     "url": "/itunes-artist/index.html"
   },
   {
-    "revision": "5126cc1db133008bfa26",
-    "url": "/itunes-artist/static/css/main.35262ba1.chunk.css"
+    "revision": "6692163c554b48c3029d",
+    "url": "/itunes-artist/static/css/main.048c3a54.chunk.css"
   },
   {
     "revision": "63eda9ca8088116a84c7",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/itunes-artist/static/js/2.9f9a174b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5126cc1db133008bfa26",
+    "revision": "6692163c554b48c3029d",
     "url": "/itunes-artist/static/js/main.265493e8.chunk.js"
   },
   {
