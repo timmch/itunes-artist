@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.artistCover {
+  padding: 180px 60px 40px;
+  width: calc(100% - 120px);
+  height: auto;
+  background: url(https://storage.googleapis.com/wdc-app-assets/ariana_grande.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.artistCover h1 {
+  margin: 0px;
+  font-size: 62px;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.artistCover h4 {
   color: white;
+  padding-bottom: 140px;
 }
 
-.App-link {
-  color: #61dafb;
+.artistCover a {
+  color: white;
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.artistBody {
+  padding: 60px 40px;
+  text-align: left;
+}
+
+.albumsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.albumsViewToggle span {
+  cursor: pointer;
+}
+
+.gridSelected .grid, .listSelected .list {
+  font-weight: 900;
+}
+
+ul.albumList {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.titleRow {
+  display: none;
+}
+
+.albumList a {
+  text-decoration: none;
+}
+
+.albumList a:hover {
+  text-decoration: underline;
+}
+
+.albumList h4 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: #333;
+  text-decoration: none;
+}
+
+.albumList h5 {
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+.gridSelected ul.albumList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.listSelected .titleRow {
+  display: flex;
+}
+
+.listSelected li {
+  border-bottom: 1px solid #efefef;
+}
+
+li h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.listSelected li:hover img {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.gridSelected li img:hover {
+  filter: brightness(0.4);
+  cursor: pointer;
+}
+
+.listSelected li:hover:not(.titleRow) {
+  background: #efefef;
+}
+
+.listSelected .titleRow {
+  text-transform: uppercase;
+}
+
+.listSelected ul.albumList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.listSelected li {
+  display: flex;
+  padding: 5px 0px;
+  align-items: center;
+}
+
+.listSelected .cell {
+  flex-grow: 1;
+  width: 100%;
+  padding-right: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.listSelected h4, .listSelected h5 {
+  margin: 0px;
+}
+
+h4 .explicit::after {
+  padding-left: 2px;
+  color: #727275;
+  content: "🅴";
+  font-size: 12px;
+}
+
+.listSelected .album-cover {
+  width: 90px;
+  min-width: 110px;
+  padding-right: 20px;
+}
+
+.tableOnly {
+  display: none;
+}
+
+.listSelected .tableOnly {
+  display: block;
+}
+
+li:first-child {
+  padding-left: 0px;
+}
+
+.album img {
+  width: 100%;
+}
+
+@media only screen and (max-width : 768px) {
+  .artistCover {
+    background-position: 80%;
+    width: calc(100% - 40px);
+    padding: 60px 20px 40px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .artistCover h4 {
+    padding-bottom: 60px;
+  }
+
+  .artistCover a {
+    float: none;
+  }
+
+  .albumsViewToggle {
+    display: none;
+  }
+
+  .listSelected .titleRow {
+    display: none;
+  }
+
+  .listSelected ul.albumList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+  }
+  .listSelected ul li {
+    display: block;
+  }
+  .listSelected .tableOnly {
+    display: none;
+  }
+  .albumList a {
+    text-decoration: underline;
+    color: #333;
+  }
+  .albumsHeader h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .artistBody {
+    padding: 20px;
+  }
+  .listSelected .cell {
+    padding-right: 0px;
   }
 }
