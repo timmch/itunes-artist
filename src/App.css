@@ -171,7 +171,8 @@ li:first-child {
 
 @media only screen and (max-width : 768px) {
   .artistCover {
-    background-size: 100% auto;
+    background: url(https://storage.googleapis.com/wdc-app-assets/ariana_grande_portrait.jpeg) no-repeat center center fixed;
+    /* background-size: 100% auto; */
     width: calc(100% - 40px);
     padding: 60px 20px 40px;
     text-align: center;
