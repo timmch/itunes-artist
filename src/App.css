@@ -171,7 +171,7 @@ li:first-child {
 
 @media only screen and (max-width : 768px) {
   .artistCover {
-    background-position: 80%;
+    background-size: cover;
     width: calc(100% - 40px);
     padding: 60px 20px 40px;
     text-align: center;
